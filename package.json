@@ -1,0 +1,18 @@
+{
+  "name": "eventix",
+  "version": "1.0.0",
+  "description": "Eventix Full-Stack Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
