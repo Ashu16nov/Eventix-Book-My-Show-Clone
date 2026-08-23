@@ -1,4 +1,5 @@
 # Eventix - BookMyShow Clone
+-------------------------------------------------------------------------
 
 Eventix is a modern, responsive movie ticketing and event booking platform built with the MERN (MongoDB, Express, React, Node.js) stack. It is designed to replicate the core functionalities and sleek UI of popular ticketing platforms like BookMyShow.
 
