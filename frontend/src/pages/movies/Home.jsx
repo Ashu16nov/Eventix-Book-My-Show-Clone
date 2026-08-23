@@ -69,36 +69,34 @@ const Home = () => {
             <Link 
               to={isMovie ? `/movies/${item._id}` : `#`} 
               key={item._id} 
-              className="min-w-[220px] w-[220px] group relative rounded-xl overflow-hidden bg-dark-800 border border-dark-700 transition-transform hover:-translate-y-2 hover:shadow-[0_10px_25px_-5px_rgba(217,70,239,0.3)] block"
+              className="min-w-[160px] w-[160px] sm:min-w-[180px] sm:w-[180px] md:min-w-[220px] md:w-[220px] group flex flex-col transition-transform hover:-translate-y-2 block"
             >
-              <div className="h-[320px] overflow-hidden relative">
+              <div className="aspect-[2/3] w-full overflow-hidden relative rounded-xl shadow-lg group-hover:shadow-[0_10px_25px_-5px_rgba(217,70,239,0.3)] transition-shadow">
                 <img 
                   src={item.poster} 
                   alt={item.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-brand-500/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+                  <span className="bg-brand-500 text-white font-bold px-4 py-1.5 rounded-full text-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                    Book
+                  </span>
+                </div>
               </div>
               
-              <div className="absolute bottom-0 left-0 w-full p-4">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="text-[10px] uppercase tracking-widest bg-brand-500 text-white px-2 py-0.5 rounded font-bold">
+              <div className="w-full pt-3 flex flex-col">
+                <div className="flex justify-between items-center mb-1">
+                  <span className="text-[9px] uppercase tracking-widest bg-gray-700 text-white px-1.5 py-0.5 rounded font-bold">
                     {isMovie ? item.certificate : item.status}
                   </span>
                   {isMovie && (
-                    <span className="text-yellow-500 text-xs font-bold flex items-center gap-1 bg-dark-900/80 px-2 py-1 rounded-md">
+                    <span className="text-yellow-500 text-xs font-bold flex items-center gap-1">
                       <FiStar className="fill-current" /> {item.rating}
                     </span>
                   )}
                 </div>
-                <h3 className="text-white font-bold text-lg mb-1 truncate group-hover:text-brand-400 transition-colors">{item.title}</h3>
-                {isMovie && <p className="text-gray-400 text-xs uppercase tracking-wide truncate">{item.genre?.join(' • ')}</p>}
-              </div>
-              
-              <div className="absolute inset-0 bg-brand-500/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
-                <span className="bg-brand-500 text-white font-bold px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                  Book Now
-                </span>
+                <h3 className="text-white font-bold text-base md:text-lg mb-0.5 truncate group-hover:text-brand-400 transition-colors">{item.title}</h3>
+                {isMovie && <p className="text-gray-400 text-xs truncate">{item.genre?.join(', ')}</p>}
               </div>
             </Link>
           ))}
@@ -209,7 +207,7 @@ const Home = () => {
       {/* Media Catalog Sections */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {renderMediaRow('Recommended Movies', movies.filter(m => m.status === 'Now Showing'), true)}
-        {renderMediaRow('Upcoming Movies', movies.filter(m => m.status === 'Coming Soon'), true)}
+        {renderMediaRow('Upcoming Movies', movies.filter(m => m.status === 'Coming Soon').sort((a, b) => new Date(a.releaseDate) - new Date(b.releaseDate)), true)}
         {renderMediaRow('Live Events', events)}
         {renderMediaRow('Standup & Theatre', shows)}
       </div>

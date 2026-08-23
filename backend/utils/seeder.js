@@ -55,8 +55,8 @@ const importData = async () => {
         const movies = await Movie.insertMany([
             {
                 title: 'Stree 2',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/3/30/Stree_2_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1572456456070-7617b0d0dc52?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Stree%202%20hindi%20comedy%20horror?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Stree%202%20hindi%20horror?width=1280&height=720&nologo=true',
                 description: 'The town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity.',
                 genre: ['Comedy', 'Horror'],
                 language: ['Hindi'],
@@ -66,12 +66,12 @@ const importData = async () => {
                 director: 'Amar Kaushik',
                 cast: ['Shraddha Kapoor', 'Rajkummar Rao', 'Pankaj Tripathi'],
                 rating: 8.6,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Fighter',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/d/d3/Fighter_film_teaser.jpg',
-                banner: 'https://images.unsplash.com/photo-1544723049-3fb7cfad9a95?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Fighter%20hindi%20action%20airforce?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Fighter%20hindi%20action%20airforce?width=1280&height=720&nologo=true',
                 description: 'Top IAF aviators come together in the face of imminent danger, to form Air Dragons.',
                 genre: ['Action', 'Thriller'],
                 language: ['Hindi'],
@@ -81,12 +81,12 @@ const importData = async () => {
                 director: 'Siddharth Anand',
                 cast: ['Hrithik Roshan', 'Deepika Padukone', 'Anil Kapoor'],
                 rating: 7.5,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Hanu-Man',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/b/bb/Hanu_Man_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Hanu-Man%20telugu%20superhero?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Hanu-Man%20telugu%20superhero?width=1280&height=720&nologo=true',
                 description: 'An imaginary place called Anjanadri where the protagonist gets the powers of Hanuman and fights for Anjanadri.',
                 genre: ['Action', 'Adventure', 'Fantasy'],
                 language: ['Telugu', 'Hindi'],
@@ -96,12 +96,12 @@ const importData = async () => {
                 director: 'Prasanth Varma',
                 cast: ['Teja Sajja', 'Amritha Aiyer'],
                 rating: 8.4,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Shaitaan',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/a/af/Shaitaan_2024_film_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Shaitaan%20hindi%20horror%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Shaitaan%20hindi%20horror%20movie?width=1280&height=720&nologo=true',
                 description: 'A timeless tale of battle between good and evil with a family embodying the forces of righteousness while a man symbolizes malevolence.',
                 genre: ['Thriller', 'Horror'],
                 language: ['Hindi'],
@@ -111,12 +111,12 @@ const importData = async () => {
                 director: 'Vikas Bahl',
                 cast: ['Ajay Devgn', 'R. Madhavan', 'Jyothika'],
                 rating: 7.7,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Jawan',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Jawan%20hindi%20action%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Jawan%20hindi%20action%20movie?width=1280&height=720&nologo=true',
                 description: 'A high-octane action thriller which outlines the emotional journey of a man who is set to rectify the wrongs in the society.',
                 genre: ['Action', 'Thriller'],
                 language: ['Hindi', 'Tamil', 'Telugu'],
@@ -126,12 +126,12 @@ const importData = async () => {
                 director: 'Atlee',
                 cast: ['Shah Rukh Khan', 'Nayanthara', 'Vijay Sethupathi'],
                 rating: 8.2,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Kalki 2898 AD',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/4/4c/Kalki_2898_AD_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Kalki%202898%20AD%20telugu%20sci-fi?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Kalki%202898%20AD%20telugu%20sci-fi?width=1280&height=720&nologo=true',
                 description: 'A modern-day avatar of Vishnu, a Hindu god, who is believed to have descended to earth to protect the world from evil forces.',
                 genre: ['Sci-Fi', 'Action'],
                 language: ['Telugu', 'Hindi', 'Tamil'],
@@ -141,12 +141,12 @@ const importData = async () => {
                 director: 'Nag Ashwin',
                 cast: ['Prabhas', 'Amitabh Bachchan', 'Deepika Padukone'],
                 rating: 8.5,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Animal',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/9/90/Animal_%282023_film%29_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1533613220915-609f661a6fe1?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Animal%20hindi%20action%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Animal%20hindi%20action%20movie?width=1280&height=720&nologo=true',
                 description: 'A son\'s obsessive love for his father leads him down a dark path of vengeance.',
                 genre: ['Action', 'Crime', 'Drama'],
                 language: ['Hindi', 'Telugu'],
@@ -156,12 +156,12 @@ const importData = async () => {
                 director: 'Sandeep Reddy Vanga',
                 cast: ['Ranbir Kapoor', 'Anil Kapoor', 'Bobby Deol'],
                 rating: 7.9,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Salaar: Part 1 - Ceasefire',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/4/42/Salaar_Part_1_%E2%80%93_Ceasefire_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Salaar%20action%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Salaar%20action%20movie?width=1280&height=720&nologo=true',
                 description: 'A gang leader makes a promise to a dying friend and takes on other criminal gangs.',
                 genre: ['Action', 'Crime'],
                 language: ['Telugu', 'Hindi', 'Kannada'],
@@ -171,27 +171,13 @@ const importData = async () => {
                 director: 'Prashanth Neel',
                 cast: ['Prabhas', 'Prithviraj Sukumaran', 'Shruti Haasan'],
                 rating: 8.1,
-                status: 'Now Showing'
+                status: 'Past'
             },
-            {
-                title: 'Pushpa 2: The Rule',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/1/11/Pushpa_2_The_Rule_Poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=1280',
-                description: 'The clash between Pushpa and Bhanwar Singh continues in this epic sequel.',
-                genre: ['Action', 'Drama'],
-                language: ['Telugu', 'Hindi', 'Tamil'],
-                duration: 180,
-                releaseDate: new Date('2024-08-15'),
-                certificate: 'U/A',
-                director: 'Sukumar',
-                cast: ['Allu Arjun', 'Fahadh Faasil', 'Rashmika Mandanna'],
-                rating: 8.8,
-                status: 'Coming Soon'
-            },
+
             {
                 title: 'Leo',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/1/1b/Leo_2023_Poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Leo%20tamil%20action%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Leo%20tamil%20action%20movie?width=1280&height=720&nologo=true',
                 description: 'A mild-mannered cafe owner gets caught up with a drug cartel and must protect his family.',
                 genre: ['Action', 'Thriller'],
                 language: ['Tamil', 'Hindi', 'Telugu'],
@@ -201,12 +187,12 @@ const importData = async () => {
                 director: 'Lokesh Kanagaraj',
                 cast: ['Vijay', 'Sanjay Dutt', 'Trisha'],
                 rating: 8.0,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Pathaan',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Pathaan%20hindi%20action%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Pathaan%20hindi%20action%20movie?width=1280&height=720&nologo=true',
                 description: 'An exiled RAW agent must stop an ex-agent from destroying India with a deadly virus.',
                 genre: ['Action', 'Thriller'],
                 language: ['Hindi', 'Tamil', 'Telugu'],
@@ -216,12 +202,12 @@ const importData = async () => {
                 director: 'Siddharth Anand',
                 cast: ['Shah Rukh Khan', 'Deepika Padukone', 'John Abraham'],
                 rating: 7.8,
-                status: 'Now Showing'
+                status: 'Past'
             },
             {
                 title: 'Avengers: Doomsday',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Avengers_Endgame_poster.jpg/220px-Avengers_Endgame_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Avengers%20Doomsday%20marvel%20superhero%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Avengers%20Doomsday%20marvel?width=1280&height=720&nologo=true',
                 description: 'The Avengers face their greatest threat yet as Doctor Doom emerges.',
                 genre: ['Action', 'Sci-Fi'],
                 language: ['English', 'Hindi', 'Tamil', 'Telugu'],
@@ -235,8 +221,8 @@ const importData = async () => {
             },
             {
                 title: 'Dune: Part Three',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/8/8e/Dune_Part_Two_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Dune%20Part%20Three%20sci-fi%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Dune%20Part%20Three%20desert%20sci-fi?width=1280&height=720&nologo=true',
                 description: 'Paul Atreides faces the ultimate holy war across the universe in the epic conclusion.',
                 genre: ['Sci-Fi', 'Adventure'],
                 language: ['English', 'Hindi'],
@@ -250,8 +236,8 @@ const importData = async () => {
             },
             {
                 title: 'Ramayana',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/9/90/Animal_%282023_film%29_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Ramayana%20indian%20mythological%20epic%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Ramayana%20epic%20mythology?width=1280&height=720&nologo=true',
                 description: 'An epic adaptation of the ancient Indian mythological saga.',
                 genre: ['Action', 'Mythology', 'Drama'],
                 language: ['Hindi', 'Telugu', 'Tamil'],
@@ -265,8 +251,8 @@ const importData = async () => {
             },
             {
                 title: 'Drishyam 3',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/9/9f/Drishyam_2_2022_film_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Drishyam%203%20malayalam%20thriller?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Drishyam%203%20thriller?width=1280&height=720&nologo=true',
                 description: 'The final chapter in Georgekutty\'s thrilling saga to protect his family.',
                 genre: ['Thriller', 'Crime'],
                 language: ['Malayalam', 'Hindi'],
@@ -280,8 +266,8 @@ const importData = async () => {
             },
             {
                 title: 'Jailer 2',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/c/cb/Jailer_2023_Tamil_film_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1533613220915-609f661a6fe1?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Jailer%202%20tamil%20action%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Jailer%202%20action?width=1280&height=720&nologo=true',
                 description: 'Muthuvel Pandian returns for another action-packed mission.',
                 genre: ['Action', 'Thriller'],
                 language: ['Tamil', 'Telugu', 'Hindi'],
@@ -293,25 +279,11 @@ const importData = async () => {
                 rating: 0,
                 status: 'Coming Soon'
             },
-            {
-                title: 'Toxic',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/4/42/Salaar_Part_1_%E2%80%93_Ceasefire_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1601049676869-702ea24cfd58?q=80&w=1280',
-                description: 'A gritty underworld action drama set in the Goan drug cartel world.',
-                genre: ['Action', 'Crime'],
-                language: ['Kannada', 'Hindi'],
-                duration: 155,
-                releaseDate: new Date('2026-08-26'),
-                certificate: 'A',
-                director: 'Geetu Mohandas',
-                cast: ['Yash', 'Kiara Advani', 'Nayanthara'],
-                rating: 0,
-                status: 'Coming Soon'
-            },
+
             {
                 title: 'The Paradise',
-                poster: 'https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=600',
-                banner: 'https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20The%20Paradise%20romantic%20drama%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20The%20Paradise%20romantic%20kashmir?width=1280&height=720&nologo=true',
                 description: 'A breathtaking romantic drama set in the lush landscapes of Kashmir.',
                 genre: ['Romance', 'Drama'],
                 language: ['Hindi'],
@@ -325,8 +297,8 @@ const importData = async () => {
             },
             {
                 title: 'Spirit',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/9/90/Animal_%282023_film%29_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Spirit%20telugu%20action%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Spirit%20telugu%20movie?width=1280&height=720&nologo=true',
                 description: 'A righteous cop takes on the criminal underworld in this violent action saga.',
                 genre: ['Action', 'Drama'],
                 language: ['Telugu', 'Hindi'],
@@ -340,8 +312,8 @@ const importData = async () => {
             },
             {
                 title: 'Brahmastra Part 2',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/4/40/Brahmastra_Teaser_Poster.jpeg',
-                banner: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Brahmastra%20Part%202%20fantasy%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Brahmastra%20Part%202%20fantasy?width=1280&height=720&nologo=true',
                 description: 'The next chapter of the Astraverse saga following Shiva and Isha\'s journey.',
                 genre: ['Fantasy', 'Action'],
                 language: ['Hindi', 'Telugu'],
@@ -355,8 +327,8 @@ const importData = async () => {
             },
             {
                 title: 'Avengers: Secret Wars',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Avengers%20Secret%20Wars%20marvel%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Avengers%20Secret%20Wars%20marvel?width=1280&height=720&nologo=true',
                 description: 'The epic finale of the Multiverse Saga where worlds collide.',
                 genre: ['Action', 'Sci-Fi'],
                 language: ['English', 'Hindi', 'Tamil', 'Telugu'],
@@ -370,8 +342,8 @@ const importData = async () => {
             },
             {
                 title: 'The Mandalorian & Grogu',
-                poster: 'https://upload.wikimedia.org/wikipedia/en/3/37/The_Mandalorian_season_3_poster.jpg',
-                banner: 'https://images.unsplash.com/photo-1542282088-fe8426682b8f?q=80&w=1280',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20The%20Mandalorian%20And%20Grogu%20star%20wars%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20The%20Mandalorian%20And%20Grogu%20star%20wars?width=1280&height=720&nologo=true',
                 description: 'Din Djarin and Grogu embark on a new cinematic adventure across the galaxy.',
                 genre: ['Sci-Fi', 'Adventure'],
                 language: ['English'],
@@ -382,6 +354,156 @@ const importData = async () => {
                 cast: ['Pedro Pascal', 'Sigourney Weaver', 'Jeremy Allen White'],
                 rating: 0,
                 status: 'Coming Soon'
+            },
+            {
+                title: 'Awarapan 2',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Awarapan%202%20hindi%20movie%20action%20thriller?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Awarapan%202%20hindi%20movie?width=1280&height=720&nologo=true',
+                description: 'The intense sequel to the cult classic action thriller.',
+                genre: ['Action', 'Thriller'],
+                language: ['Hindi'],
+                duration: 145,
+                releaseDate: new Date('2026-08-14'),
+                certificate: 'A',
+                director: 'Nitin Kakkar',
+                cast: ['Emraan Hashmi', 'Disha Patani', 'Shabana Azmi'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Khalifa – The Ruler',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Khalifa%20The%20Ruler%20malayalam%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Khalifa%20The%20Ruler?width=1280&height=720&nologo=true',
+                description: 'A powerful ruler must face unexpected betrayals in this epic Malayalam saga.',
+                genre: ['Drama', 'Action'],
+                language: ['Malayalam'],
+                duration: 155,
+                releaseDate: new Date('2026-08-19'),
+                certificate: 'U/A',
+                director: 'Vysakh',
+                cast: ['Prithviraj Sukumaran', 'Malvika Sharma', 'Mohanlal'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Irumudi',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Irumudi%20telugu%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Irumudi%20telugu%20movie?width=1280&height=720&nologo=true',
+                description: 'A gripping Telugu drama exploring the depths of tradition and modern conflicts.',
+                genre: ['Drama', 'Action'],
+                language: ['Telugu'],
+                duration: 140,
+                releaseDate: new Date('2026-08-21'),
+                certificate: 'U/A',
+                director: 'Shiva Nirvana',
+                cast: ['Ravi Teja', 'Priya Bhavani Shankar', 'Sai Kumar'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Magudam',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Magudam%20tamil%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Magudam%20tamil%20movie?width=1280&height=720&nologo=true',
+                description: 'An action-packed Tamil film about power, royalty, and justice.',
+                genre: ['Action', 'Thriller'],
+                language: ['Tamil'],
+                duration: 150,
+                releaseDate: new Date('2026-08-14'),
+                certificate: 'U/A',
+                director: 'Vishal',
+                cast: ['Vishal', 'Anjali', 'Dushara Vijayan'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Insidious: Out of The Further',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Insidious%20Out%20of%20The%20Further%20horror%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Insidious%20horror%20movie?width=1280&height=720&nologo=true',
+                description: 'The terrifying next chapter takes you deeper into The Further than ever before.',
+                genre: ['Horror', 'Thriller'],
+                language: ['English'],
+                duration: 120,
+                releaseDate: new Date('2026-08-21'),
+                certificate: 'A',
+                director: 'Jacob Chase',
+                cast: ['Amelia Eve', 'Brandon Perea', 'Lin Shaye'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Batwara 1947',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Batwara%201947%20hindi%20movie%20historical?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Batwara%201947%20historical?width=1280&height=720&nologo=true',
+                description: 'A heart-wrenching historical drama set during the partition of India.',
+                genre: ['History', 'Drama'],
+                language: ['Hindi'],
+                duration: 165,
+                releaseDate: new Date('2026-08-14'),
+                certificate: 'U/A',
+                director: 'Rajkumar Santoshi',
+                cast: ['Sunny Deol', 'Preity Zinta', 'Shabana Azmi'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Bethlehem Kudumba Unit',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Bethlehem%20Kudumba%20Unit%20malayalam%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Bethlehem%20Kudumba%20Unit?width=1280&height=720&nologo=true',
+                description: 'A heartwarming and hilarious family comedy from Kerala.',
+                genre: ['Comedy', 'Family'],
+                language: ['Malayalam'],
+                duration: 135,
+                releaseDate: new Date('2026-08-20'),
+                certificate: 'U',
+                director: 'Girish A. D.',
+                cast: ['Nivin Pauly', 'Mamitha Baiju', 'Vinay Forrt'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Sammarth',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Sammarth%20marathi%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Sammarth%20marathi%20movie?width=1280&height=720&nologo=true',
+                description: 'An inspiring Marathi film about strength, resilience, and achieving the impossible.',
+                genre: ['Drama'],
+                language: ['Marathi'],
+                duration: 130,
+                releaseDate: new Date('2026-08-14'),
+                certificate: 'U',
+                director: 'Yogesh Phulphagar',
+                cast: ['Bhushan Pradhan', 'Pushkaraj Chirputkar', 'Sharvari Jamenis'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Chorr',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Chorr%20bengali%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Chorr%20bengali%20movie?width=1280&height=720&nologo=true',
+                description: 'A suspenseful Bengali thriller centered around a high-stakes heist.',
+                genre: ['Thriller', 'Crime'],
+                language: ['Bengali'],
+                duration: 140,
+                releaseDate: new Date('2026-07-20'),
+                certificate: 'U/A',
+                director: 'Agnidev Chatterjee',
+                cast: ['Jeetu Kamal', 'Barun Chanda', 'Rajesh Sharma'],
+                rating: 0,
+                status: 'Now Showing'
+            },
+            {
+                title: 'Chargesheet 03-08',
+                poster: 'https://image.pollinations.ai/prompt/movie%20poster%20for%20Chargesheet%2003-08%20kannada%20movie?width=800&height=1200&nologo=true',
+                banner: 'https://image.pollinations.ai/prompt/cinematic%20wide%20shot%20for%20Chargesheet%20kannada%20movie?width=1280&height=720&nologo=true',
+                description: 'A gripping Kannada investigative thriller about a complex cold case.',
+                genre: ['Crime', 'Thriller'],
+                language: ['Kannada'],
+                duration: 125,
+                releaseDate: new Date('2026-08-13'),
+                certificate: 'A',
+                director: 'Venkat Bharadwaj',
+                cast: ['Sundar Raj', 'Venkat Bharadwaj', 'Sathyashree'],
+                rating: 0,
+                status: 'Now Showing'
             }
         ]);
 

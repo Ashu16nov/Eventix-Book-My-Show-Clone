@@ -17,7 +17,7 @@ const movieSchema = new mongoose.Schema({
     reviewCount: { type: Number, default: 0 },
     status: { 
         type: String, 
-        enum: ['Coming Soon', 'Now Showing', 'Ended'],
+        enum: ['Coming Soon', 'Now Showing', 'Ended', 'Past'],
         default: 'Now Showing'
     }
 }, { timestamps: true });
