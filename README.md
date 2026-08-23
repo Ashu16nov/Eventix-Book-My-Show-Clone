@@ -28,6 +28,7 @@ cd backend
 npm install
 npm start
 ```
+
 *Note: The backend is configured to use an In-Memory MongoDB server if a primary MongoDB URI is not provided, meaning you can start developing immediately without configuring a database.*
 
 ### 3. Setup Frontend
@@ -44,6 +45,7 @@ cd backend
 node utils/seeder.js
 ```
 *(If you are using the in-memory database, the seeder automatically runs when you start the server).*
+
 
 ## License
 This project is open-source and available under the MIT License.
