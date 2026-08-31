@@ -85,7 +85,7 @@ const MovieDetails = () => {
               </div>
               
               <Link 
-                to={`/booking/${movie._id}`}
+                to={`/movie/${movie._id}/showtimes`}
                 className="inline-block bg-gradient-to-r from-brand-500 to-brand-600 hover:from-brand-400 hover:to-brand-500 text-white font-bold text-lg px-10 py-4 rounded-xl shadow-[0_10px_25px_-5px_rgba(217,70,239,0.5)] transform transition hover:-translate-y-1"
               >
                 Book Tickets Now

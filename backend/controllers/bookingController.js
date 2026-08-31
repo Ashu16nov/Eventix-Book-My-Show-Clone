@@ -62,3 +62,22 @@ export const getUserBookings = async (req, res) => {
         res.status(500).json({ success: false, message: error.message });
     }
 };
+
+export const getBookingById = async (req, res) => {
+    try {
+        const booking = await Booking.findOne({ _id: req.params.id, user: req.user._id })
+            .populate({
+                path: 'showtime',
+                populate: { path: 'movie cinema screen' }
+            })
+            .populate('seats');
+            
+        if (!booking) {
+            return res.status(404).json({ success: false, message: 'Booking not found' });
+        }
+            
+        res.json({ success: true, data: booking });
+    } catch (error) {
+        res.status(500).json({ success: false, message: error.message });
+    }
+};

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import { MongoMemoryServer } from 'mongodb-memory-server';
+import { MongoMemoryReplSet } from 'mongodb-memory-server';
 
 dotenv.config();
 
@@ -17,7 +17,7 @@ const connectDB = async () => {
         console.log('Falling back to In-Memory MongoDB Server for local development...');
         
         try {
-            globalMongoServer = await MongoMemoryServer.create();
+            globalMongoServer = await MongoMemoryReplSet.create({ replSet: { count: 1 } });
             const mongoUri = globalMongoServer.getUri();
             
             await mongoose.connect(mongoUri);
