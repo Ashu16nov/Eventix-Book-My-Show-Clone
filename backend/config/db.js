@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { MongoMemoryReplSet } from 'mongodb-memory-server';
+import fs from 'fs';
+import path from 'path';
 
 dotenv.config();
 
@@ -17,7 +19,23 @@ const connectDB = async () => {
         console.log('Falling back to In-Memory MongoDB Server for local development...');
         
         try {
-            globalMongoServer = await MongoMemoryReplSet.create({ replSet: { count: 1 } });
+            const dbPath = path.join(process.cwd(), '.mongo-data');
+            if (!fs.existsSync(dbPath)) {
+                fs.mkdirSync(dbPath, { recursive: true });
+            }
+            const lockFile = path.join(dbPath, 'mongod.lock');
+            if (fs.existsSync(lockFile)) {
+                try { fs.unlinkSync(lockFile); } catch (e) {}
+            }
+
+            globalMongoServer = await MongoMemoryReplSet.create({ 
+                replSet: { count: 1 },
+                instanceOpts: [
+                    {
+                        dbPath: dbPath
+                    }
+                ]
+            });
             const mongoUri = globalMongoServer.getUri();
             
             await mongoose.connect(mongoUri);

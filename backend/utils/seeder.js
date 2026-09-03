@@ -21,6 +21,12 @@ const importData = async () => {
             await connectDB();
         }
         
+        const count = await User.countDocuments();
+        if (count > 0) {
+            console.log('Database already seeded. Skipping...');
+            return;
+        }
+
         await User.deleteMany();
         await Movie.deleteMany();
         await Event.deleteMany();
